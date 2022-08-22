@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-internal class InterFont {
+fileprivate class InterFont {
 	static let regular = "Inter-Regular"
 	static let italic = "Inter-Italic"
 	static let extraLight = "Inter-ExtraLightBETA"

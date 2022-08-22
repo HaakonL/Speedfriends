@@ -9,6 +9,7 @@ import SwiftUI
 
 extension Color {
 	static let bg = Color("background")
+	static let tabbarBg = Color("tabbar-background")
 	
 	static let imageGradientStart = Color("image-gradient-start")
 	static let imageGradientEnd = Color("image-gradient-end")
@@ -22,8 +23,12 @@ extension Color {
 	static let titleGradientStart = Color("title-gradient-start")
 	static let titleGradientEnd = Color("title-gradient-end")
 	static let aboutMeText = Color("about-me-text")
+	
+	static let carouselIndicator = Color("carousel-indicator")
 }
 
 extension ShapeStyle where Self == Color {
 	static var interestBackground: Color { .interestBackground }
+	static var tabbarBg: Color { .tabbarBg }
+	static var carouselIndicator: Color { .carouselIndicator }
 }

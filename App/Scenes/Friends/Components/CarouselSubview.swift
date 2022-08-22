@@ -16,6 +16,8 @@ struct CarouselSubview: View {
 				.scaledToFill()
 				.cornerRadius(16)
 			
+			CarouselIndicators()
+			
 			Rectangle()
 				.fill(LinearGradient(
 					colors: [.imageGradientStart, .imageGradientEnd],
@@ -35,7 +37,8 @@ struct CarouselSubview: View {
 						Image("flag")
 					}
 				}
-				.padding(15)
+				.padding(.horizontal, 15)
+				.padding(.top, 22)
 				
 				Spacer()
 				
@@ -54,7 +57,7 @@ struct CarouselSubview: View {
 						Image("right")
 					}
 				}
-				.padding()
+				.padding(.horizontal, 8)
 				
 				Spacer()
 				
@@ -78,11 +81,36 @@ struct CarouselSubview: View {
 					} label: {
 						Image("cta")
 					}
+					.buttonStyle(.plain)
+					.padding(.top, 3)
 				}
-				.padding(15)
+				.padding(.horizontal, 15)
 			}
 		}
 		.frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height * 0.5)
+	}
+}
+
+struct CarouselIndicators: View {
+	var body: some View {
+		HStack(alignment: .center, spacing: 4) {
+			Rectangle()
+				.fill(.carouselIndicator)
+				.frame(height: 2)
+				.cornerRadius(4)
+			
+			Rectangle()
+				.fill(.white)
+				.frame(height: 2)
+				.cornerRadius(4)
+			
+			Rectangle()
+				.fill(.carouselIndicator)
+				.frame(height: 2)
+				.cornerRadius(4)
+		}
+		.padding(.horizontal, 15)
+		.padding(.top, 8)
 	}
 }
 

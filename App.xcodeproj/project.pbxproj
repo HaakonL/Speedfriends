@@ -101,12 +101,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F8085E9428B2B62E003BF02F /* Shared */ = {
+		F8085E9428B2B62E003BF02F /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				F8085E9528B2B641003BF02F /* SharedStyles.swift */,
 			);
-			path = Shared;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F8085E9728B2B682003BF02F /* Components */ = {
@@ -182,7 +182,7 @@
 		F8CC034A2822AF6A0077AD57 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F8085E9428B2B62E003BF02F /* Shared */,
+				F8085E9428B2B62E003BF02F /* Common */,
 				F8192C6228AAC8E600C51857 /* Extensions */,
 				F8CC037F2822B12A0077AD57 /* Scenes */,
 				F8CC034B2822AF6A0077AD57 /* Main.swift */,
