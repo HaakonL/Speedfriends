@@ -34,6 +34,8 @@
 		F8192CA828B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */; };
 		F8192CA928B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */; };
 		F8192CAA28B22D2F00C51857 /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */; };
+		F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776AC928B49D2700A77371 /* ImageCarouselView.swift */; };
+		F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */; };
 		F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AE66F2827FF9700F11CA1 /* EventsView.swift */; };
 		F8CC034C2822AF6A0077AD57 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034B2822AF6A0077AD57 /* Main.swift */; };
 		F8CC034E2822AF6A0077AD57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034D2822AF6A0077AD57 /* MainView.swift */; };
@@ -74,6 +76,8 @@
 		F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F8776AC928B49D2700A77371 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselIndicatorsView.swift; sourceTree = "<group>"; };
 		F87AE66F2827FF9700F11CA1 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		F8CC03482822AF6A0077AD57 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC034B2822AF6A0077AD57 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		F8085E9728B2B682003BF02F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F8776AC828B49D0A00A77371 /* ImageCarousel */,
 				F8085E9828B2B699003BF02F /* AboutMeSubview.swift */,
 				F8085E9A28B2B6D1003BF02F /* InterestsSubview.swift */,
 				F8085E9C28B2B707003BF02F /* CarouselSubview.swift */,
@@ -152,6 +157,15 @@
 				F8192C8728B22D2E00C51857 /* Inter-UI-BlackItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F8776AC828B49D0A00A77371 /* ImageCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F8776AC928B49D2700A77371 /* ImageCarouselView.swift */,
+				F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */,
+			);
+			path = ImageCarousel;
 			sourceTree = "<group>";
 		};
 		F87AE66E2827FF8700F11CA1 /* Events */ = {
@@ -368,6 +382,8 @@
 				F8CC03A12823B1690077AD57 /* ChatsView.swift in Sources */,
 				F8CC034C2822AF6A0077AD57 /* Main.swift in Sources */,
 				F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */,
+				F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */,
+				F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */,
 				F8085E9628B2B641003BF02F /* SharedStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

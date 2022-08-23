@@ -6,17 +6,28 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CarouselSubview: View {
+	@State private var currentIndex: Int = 0
+	private var images = ["woman1", "woman1", "woman1", "woman1", "woman1"]
+	
 	var body: some View {
 		ZStack(alignment: .top) {
+			GeometryReader { geometry in
+				ImageCarouselView(currentIndex: $currentIndex, numberOfImages: images.count) {
+					ForEach(images, id: \.self) { img in
+						Image(img)
+							.resizable()
+							.scaledToFill()
+							.frame(width: geometry.size.width, height: geometry.size.height)
+							.cornerRadius(16)
+					}
+				}
+			}
+			.frame(height: UIScreen.main.bounds.height * 0.5, alignment: .center)
 			
-			Image("woman1")
-				.resizable()
-				.scaledToFill()
-				.cornerRadius(16)
-			
-			CarouselIndicators()
+			ImageCarouselIndicatorsView(currentIndex: $currentIndex, numberOfImages: images.count)
 			
 			Rectangle()
 				.fill(LinearGradient(
@@ -44,7 +55,9 @@ struct CarouselSubview: View {
 				
 				HStack {
 					Button {
-						
+						if currentIndex > 0 {
+							currentIndex -= 1
+						}
 					} label: {
 						Image("left")
 					}
@@ -52,7 +65,9 @@ struct CarouselSubview: View {
 					Spacer()
 					
 					Button {
-						
+						if currentIndex < images.count {
+							currentIndex += 1
+						}
 					} label: {
 						Image("right")
 					}
@@ -85,32 +100,10 @@ struct CarouselSubview: View {
 					.padding(.top, 3)
 				}
 				.padding(.horizontal, 15)
+				.padding(.bottom, 15)
 			}
 		}
 		.frame(width: UIScreen.main.bounds.width - 20, height: UIScreen.main.bounds.height * 0.5)
-	}
-}
-
-struct CarouselIndicators: View {
-	var body: some View {
-		HStack(alignment: .center, spacing: 4) {
-			Rectangle()
-				.fill(.carouselIndicator)
-				.frame(height: 2)
-				.cornerRadius(4)
-			
-			Rectangle()
-				.fill(.white)
-				.frame(height: 2)
-				.cornerRadius(4)
-			
-			Rectangle()
-				.fill(.carouselIndicator)
-				.frame(height: 2)
-				.cornerRadius(4)
-		}
-		.padding(.horizontal, 15)
-		.padding(.top, 8)
 	}
 }
 
