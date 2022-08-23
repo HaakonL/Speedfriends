@@ -10,7 +10,7 @@ import Combine
 
 struct CarouselSubview: View {
 	@State private var currentIndex: Int = 0
-	private var images = ["woman1", "woman1", "woman1", "woman1", "woman1"]
+	private var images = ["photo2", "photo3", "photo4", "photo5"]
 	
 	var body: some View {
 		ZStack(alignment: .top) {
@@ -21,9 +21,9 @@ struct CarouselSubview: View {
 							.resizable()
 							.scaledToFill()
 							.frame(width: geometry.size.width, height: geometry.size.height)
-							.cornerRadius(16)
 					}
 				}
+				.cornerRadius(16)
 			}
 			.frame(height: UIScreen.main.bounds.height * 0.5, alignment: .center)
 			
@@ -60,17 +60,21 @@ struct CarouselSubview: View {
 						}
 					} label: {
 						Image("left")
+							.opacity(currentIndex == 0 ? 0.35 : 1)
 					}
+					.disabled(currentIndex == 0)
 					
 					Spacer()
 					
 					Button {
-						if currentIndex < images.count {
+						if currentIndex < images.count-1 {
 							currentIndex += 1
 						}
 					} label: {
 						Image("right")
+							.opacity(currentIndex == images.count-1 ? 0.35 : 1)
 					}
+					.disabled(currentIndex == images.count-1)
 				}
 				.padding(.horizontal, 8)
 				
