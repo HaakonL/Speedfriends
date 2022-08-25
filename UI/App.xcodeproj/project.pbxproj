@@ -36,6 +36,10 @@
 		F8192CAA28B22D2F00C51857 /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */; };
 		F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776AC928B49D2700A77371 /* ImageCarouselView.swift */; };
 		F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */; };
+		F8776B2A28B7CCCF00A77371 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2828B7CCCF00A77371 /* Core.framework */; };
+		F8776B2B28B7CCCF00A77371 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2828B7CCCF00A77371 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8776B2C28B7CCCF00A77371 /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2928B7CCCF00A77371 /* Persistence.framework */; };
+		F8776B2D28B7CCCF00A77371 /* Persistence.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2928B7CCCF00A77371 /* Persistence.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AE66F2827FF9700F11CA1 /* EventsView.swift */; };
 		F8CC034C2822AF6A0077AD57 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034B2822AF6A0077AD57 /* Main.swift */; };
 		F8CC034E2822AF6A0077AD57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034D2822AF6A0077AD57 /* MainView.swift */; };
@@ -47,6 +51,21 @@
 		F8CC039F2823B1400077AD57 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC039E2823B1400077AD57 /* GroupsView.swift */; };
 		F8CC03A12823B1690077AD57 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC03A02823B1690077AD57 /* ChatsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8776B2E28B7CCCF00A77371 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8776B2D28B7CCCF00A77371 /* Persistence.framework in Embed Frameworks */,
+				F8776B2B28B7CCCF00A77371 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F8085E8C28B299AE003BF02F /* RoundedCorner+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner+Extension.swift"; sourceTree = "<group>"; };
@@ -78,15 +97,15 @@
 		F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		F8776AC928B49D2700A77371 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselIndicatorsView.swift; sourceTree = "<group>"; };
+		F8776B2828B7CCCF00A77371 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8776B2928B7CCCF00A77371 /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87AE66F2827FF9700F11CA1 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		F8CC03482822AF6A0077AD57 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC034B2822AF6A0077AD57 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F8CC034D2822AF6A0077AD57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F8CC034F2822AF6B0077AD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CC03762822B0000077AD57 /* Main+Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Bootstrap.swift"; sourceTree = "<group>"; };
-		F8CC037D2822B1140077AD57 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		F8CC03812822B1600077AD57 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		F8CC038C2823A5140077AD57 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F8CC039C2823B0BD0077AD57 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		F8CC039E2823B1400077AD57 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		F8CC03A02823B1690077AD57 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -98,6 +117,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8085E9328B2A025003BF02F /* SwiftUIFlow in Frameworks */,
+				F8776B2A28B7CCCF00A77371 /* Core.framework in Frameworks */,
+				F8776B2C28B7CCCF00A77371 /* Persistence.framework in Frameworks */,
 				F8CC037B2822B0710077AD57 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +219,7 @@
 			children = (
 				F8085E9428B2B62E003BF02F /* Common */,
 				F8192C6228AAC8E600C51857 /* Extensions */,
-				F8CC037F2822B12A0077AD57 /* Scenes */,
+				F8CC037F2822B12A0077AD57 /* Tabs */,
 				F8CC034B2822AF6A0077AD57 /* Main.swift */,
 				F8CC034D2822AF6A0077AD57 /* MainView.swift */,
 				F8CC03762822B0000077AD57 /* Main+Bootstrap.swift */,
@@ -220,13 +241,13 @@
 		F8CC037C2822B1140077AD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8CC038C2823A5140077AD57 /* MapKit.framework */,
-				F8CC037D2822B1140077AD57 /* ARKit.framework */,
+				F8776B2828B7CCCF00A77371 /* Core.framework */,
+				F8776B2928B7CCCF00A77371 /* Persistence.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F8CC037F2822B12A0077AD57 /* Scenes */ = {
+		F8CC037F2822B12A0077AD57 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
 				F87AE66E2827FF8700F11CA1 /* Events */,
@@ -235,7 +256,7 @@
 				F8CC03962823AE560077AD57 /* Groups */,
 				F8CC03972823AE5F0077AD57 /* Chats */,
 			);
-			path = Scenes;
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		F8CC03802822B1370077AD57 /* Feed */ = {
@@ -282,6 +303,7 @@
 				F8CC03442822AF6A0077AD57 /* Sources */,
 				F8CC03452822AF6A0077AD57 /* Frameworks */,
 				F8CC03462822AF6A0077AD57 /* Resources */,
+				F8776B2E28B7CCCF00A77371 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
