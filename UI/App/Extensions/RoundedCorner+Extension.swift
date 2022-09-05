@@ -1,5 +1,5 @@
 //
-//  RoundedCorner.swift
+//  RoundedCorner+Extension.swift
 //  App
 //
 //  Created by Haakon Langaas Lageng on 21/08/2022.

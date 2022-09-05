@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  App
+//  MainView.swift
+//  Main
 //
 //  Created by Haakon Langaas Lageng on 04/05/2022.
 //

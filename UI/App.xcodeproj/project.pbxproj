@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F8085E8D28B299AE003BF02F /* RoundedCorner+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8085E8C28B299AE003BF02F /* RoundedCorner+Extension.swift */; };
-		F8085E9328B2A025003BF02F /* SwiftUIFlow in Frameworks */ = {isa = PBXBuildFile; productRef = F8085E9228B2A025003BF02F /* SwiftUIFlow */; };
 		F8085E9628B2B641003BF02F /* SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8085E9528B2B641003BF02F /* SharedStyles.swift */; };
 		F8085E9928B2B699003BF02F /* AboutMeSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8085E9828B2B699003BF02F /* AboutMeSubview.swift */; };
 		F8085E9B28B2B6D1003BF02F /* InterestsSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8085E9A28B2B6D1003BF02F /* InterestsSubview.swift */; };
@@ -34,18 +33,19 @@
 		F8192CA828B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */; };
 		F8192CA928B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */; };
 		F8192CAA28B22D2F00C51857 /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */; };
+		F844A82128BFD61E00FDEFC7 /* SwiftUIFlow in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82028BFD61E00FDEFC7 /* SwiftUIFlow */; };
+		F844A82428BFD62D00FDEFC7 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82328BFD62D00FDEFC7 /* Resolver */; };
+		F844A84C28C0AD8F00FDEFC7 /* Bootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; };
+		F844A84D28C0AD8F00FDEFC7 /* Bootstrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8596F0C28BFD35D0029804E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; };
+		F8596F0D28BFD35D0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776AC928B49D2700A77371 /* ImageCarouselView.swift */; };
 		F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */; };
-		F8776B2A28B7CCCF00A77371 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2828B7CCCF00A77371 /* Core.framework */; };
-		F8776B2B28B7CCCF00A77371 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2828B7CCCF00A77371 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F8776B2C28B7CCCF00A77371 /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2928B7CCCF00A77371 /* Persistence.framework */; };
-		F8776B2D28B7CCCF00A77371 /* Persistence.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8776B2928B7CCCF00A77371 /* Persistence.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AE66F2827FF9700F11CA1 /* EventsView.swift */; };
 		F8CC034C2822AF6A0077AD57 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034B2822AF6A0077AD57 /* Main.swift */; };
 		F8CC034E2822AF6A0077AD57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC034D2822AF6A0077AD57 /* MainView.swift */; };
 		F8CC03502822AF6B0077AD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CC034F2822AF6B0077AD57 /* Assets.xcassets */; };
-		F8CC03772822B0000077AD57 /* Main+Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC03762822B0000077AD57 /* Main+Bootstrap.swift */; };
-		F8CC037B2822B0710077AD57 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F8CC037A2822B0710077AD57 /* Resolver */; };
+		F8CC03772822B0000077AD57 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC03762822B0000077AD57 /* Bootstrap.swift */; };
 		F8CC03822822B1600077AD57 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC03812822B1600077AD57 /* FeedView.swift */; };
 		F8CC039D2823B0BD0077AD57 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC039C2823B0BD0077AD57 /* FriendsView.swift */; };
 		F8CC039F2823B1400077AD57 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC039E2823B1400077AD57 /* GroupsView.swift */; };
@@ -53,14 +53,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F8776B2E28B7CCCF00A77371 /* Embed Frameworks */ = {
+		F8F64DBB28BFC87B00CD55FE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F8776B2D28B7CCCF00A77371 /* Persistence.framework in Embed Frameworks */,
-				F8776B2B28B7CCCF00A77371 /* Core.framework in Embed Frameworks */,
+				F8596F0D28BFD35D0029804E /* Core.framework in Embed Frameworks */,
+				F844A84D28C0AD8F00FDEFC7 /* Bootstrap.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,16 +95,16 @@
 		F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bootstrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8596F0B28BFD35D0029804E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8776AC928B49D2700A77371 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselIndicatorsView.swift; sourceTree = "<group>"; };
-		F8776B2828B7CCCF00A77371 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8776B2928B7CCCF00A77371 /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87AE66F2827FF9700F11CA1 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		F8CC03482822AF6A0077AD57 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CC034B2822AF6A0077AD57 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F8CC034D2822AF6A0077AD57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F8CC034F2822AF6B0077AD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F8CC03762822B0000077AD57 /* Main+Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Bootstrap.swift"; sourceTree = "<group>"; };
+		F8CC03762822B0000077AD57 /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
 		F8CC03812822B1600077AD57 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F8CC039C2823B0BD0077AD57 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		F8CC039E2823B1400077AD57 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
@@ -116,10 +116,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8085E9328B2A025003BF02F /* SwiftUIFlow in Frameworks */,
-				F8776B2A28B7CCCF00A77371 /* Core.framework in Frameworks */,
-				F8776B2C28B7CCCF00A77371 /* Persistence.framework in Frameworks */,
-				F8CC037B2822B0710077AD57 /* Resolver in Frameworks */,
+				F844A82428BFD62D00FDEFC7 /* Resolver in Frameworks */,
+				F844A84C28C0AD8F00FDEFC7 /* Bootstrap.framework in Frameworks */,
+				F844A82128BFD61E00FDEFC7 /* SwiftUIFlow in Frameworks */,
+				F8596F0C28BFD35D0029804E /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,10 +219,10 @@
 			children = (
 				F8085E9428B2B62E003BF02F /* Common */,
 				F8192C6228AAC8E600C51857 /* Extensions */,
-				F8CC037F2822B12A0077AD57 /* Tabs */,
+				F8CC037F2822B12A0077AD57 /* Features */,
 				F8CC034B2822AF6A0077AD57 /* Main.swift */,
 				F8CC034D2822AF6A0077AD57 /* MainView.swift */,
-				F8CC03762822B0000077AD57 /* Main+Bootstrap.swift */,
+				F8CC03762822B0000077AD57 /* Bootstrap.swift */,
 				F8CC03782822B00C0077AD57 /* Assets */,
 			);
 			path = App;
@@ -241,13 +241,13 @@
 		F8CC037C2822B1140077AD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8776B2828B7CCCF00A77371 /* Core.framework */,
-				F8776B2928B7CCCF00A77371 /* Persistence.framework */,
+				F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */,
+				F8596F0B28BFD35D0029804E /* Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F8CC037F2822B12A0077AD57 /* Tabs */ = {
+		F8CC037F2822B12A0077AD57 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				F87AE66E2827FF8700F11CA1 /* Events */,
@@ -256,7 +256,7 @@
 				F8CC03962823AE560077AD57 /* Groups */,
 				F8CC03972823AE5F0077AD57 /* Chats */,
 			);
-			path = Tabs;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		F8CC03802822B1370077AD57 /* Feed */ = {
@@ -303,7 +303,7 @@
 				F8CC03442822AF6A0077AD57 /* Sources */,
 				F8CC03452822AF6A0077AD57 /* Frameworks */,
 				F8CC03462822AF6A0077AD57 /* Resources */,
-				F8776B2E28B7CCCF00A77371 /* Embed Frameworks */,
+				F8F64DBB28BFC87B00CD55FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,8 +311,8 @@
 			);
 			name = App;
 			packageProductDependencies = (
-				F8CC037A2822B0710077AD57 /* Resolver */,
-				F8085E9228B2A025003BF02F /* SwiftUIFlow */,
+				F844A82028BFD61E00FDEFC7 /* SwiftUIFlow */,
+				F844A82328BFD62D00FDEFC7 /* Resolver */,
 			);
 			productName = App;
 			productReference = F8CC03482822AF6A0077AD57 /* App.app */;
@@ -343,8 +343,8 @@
 			);
 			mainGroup = F8CC033F2822AF6A0077AD57;
 			packageReferences = (
-				F8CC03792822B0710077AD57 /* XCRemoteSwiftPackageReference "Resolver" */,
-				F8085E9128B2A025003BF02F /* XCRemoteSwiftPackageReference "SwiftUIFlow" */,
+				F844A81F28BFD61E00FDEFC7 /* XCRemoteSwiftPackageReference "SwiftUIFlow" */,
+				F844A82228BFD62D00FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = F8CC03492822AF6A0077AD57 /* Products */;
 			projectDirPath = "";
@@ -400,7 +400,7 @@
 				F8192C6128AAC5AC00C51857 /* FriendsViewModel.swift in Sources */,
 				F8CC039F2823B1400077AD57 /* GroupsView.swift in Sources */,
 				F8CC03822822B1600077AD57 /* FeedView.swift in Sources */,
-				F8CC03772822B0000077AD57 /* Main+Bootstrap.swift in Sources */,
+				F8CC03772822B0000077AD57 /* Bootstrap.swift in Sources */,
 				F8CC03A12823B1690077AD57 /* ChatsView.swift in Sources */,
 				F8CC034C2822AF6A0077AD57 /* Main.swift in Sources */,
 				F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */,
@@ -548,6 +548,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,6 +581,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,7 +619,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F8085E9128B2A025003BF02F /* XCRemoteSwiftPackageReference "SwiftUIFlow" */ = {
+		F844A81F28BFD61E00FDEFC7 /* XCRemoteSwiftPackageReference "SwiftUIFlow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ciaranrobrien/SwiftUIFlow";
 			requirement = {
@@ -625,7 +627,7 @@
 				kind = branch;
 			};
 		};
-		F8CC03792822B0710077AD57 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		F844A82228BFD62D00FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver";
 			requirement = {
@@ -636,14 +638,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F8085E9228B2A025003BF02F /* SwiftUIFlow */ = {
+		F844A82028BFD61E00FDEFC7 /* SwiftUIFlow */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F8085E9128B2A025003BF02F /* XCRemoteSwiftPackageReference "SwiftUIFlow" */;
+			package = F844A81F28BFD61E00FDEFC7 /* XCRemoteSwiftPackageReference "SwiftUIFlow" */;
 			productName = SwiftUIFlow;
 		};
-		F8CC037A2822B0710077AD57 /* Resolver */ = {
+		F844A82328BFD62D00FDEFC7 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F8CC03792822B0710077AD57 /* XCRemoteSwiftPackageReference "Resolver" */;
+			package = F844A82228BFD62D00FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
 		};
 /* End XCSwiftPackageProductDependency section */
