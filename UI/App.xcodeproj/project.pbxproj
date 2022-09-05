@@ -39,6 +39,8 @@
 		F844A84D28C0AD8F00FDEFC7 /* Bootstrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8596F0C28BFD35D0029804E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; };
 		F8596F0D28BFD35D0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F873964728C5C8AF00AE9455 /* Style+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873964628C5C8AF00AE9455 /* Style+Modifier.swift */; };
+		F873964928C5C8CD00AE9455 /* Size+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873964828C5C8CD00AE9455 /* Size+Modifier.swift */; };
 		F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776AC928B49D2700A77371 /* ImageCarouselView.swift */; };
 		F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */; };
 		F87AE6702827FF9700F11CA1 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AE66F2827FF9700F11CA1 /* EventsView.swift */; };
@@ -97,6 +99,8 @@
 		F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bootstrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8596F0B28BFD35D0029804E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F873964628C5C8AF00AE9455 /* Style+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Modifier.swift"; sourceTree = "<group>"; };
+		F873964828C5C8CD00AE9455 /* Size+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Size+Modifier.swift"; sourceTree = "<group>"; };
 		F8776AC928B49D2700A77371 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		F8776ACB28B49E7600A77371 /* ImageCarouselIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselIndicatorsView.swift; sourceTree = "<group>"; };
 		F87AE66F2827FF9700F11CA1 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
@@ -180,6 +184,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F873964528C5C82D00AE9455 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F873964628C5C8AF00AE9455 /* Style+Modifier.swift */,
+				F873964828C5C8CD00AE9455 /* Size+Modifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		F8776AC828B49D0A00A77371 /* ImageCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,9 +230,10 @@
 		F8CC034A2822AF6A0077AD57 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				F8CC037F2822B12A0077AD57 /* FEATURES */,
+				F873964528C5C82D00AE9455 /* Modifiers */,
 				F8085E9428B2B62E003BF02F /* Common */,
 				F8192C6228AAC8E600C51857 /* Extensions */,
-				F8CC037F2822B12A0077AD57 /* Features */,
 				F8CC034B2822AF6A0077AD57 /* Main.swift */,
 				F8CC034D2822AF6A0077AD57 /* MainView.swift */,
 				F8CC03762822B0000077AD57 /* Bootstrap.swift */,
@@ -247,7 +261,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F8CC037F2822B12A0077AD57 /* Features */ = {
+		F8CC037F2822B12A0077AD57 /* FEATURES */ = {
 			isa = PBXGroup;
 			children = (
 				F87AE66E2827FF8700F11CA1 /* Events */,
@@ -256,7 +270,7 @@
 				F8CC03962823AE560077AD57 /* Groups */,
 				F8CC03972823AE5F0077AD57 /* Chats */,
 			);
-			path = Features;
+			path = FEATURES;
 			sourceTree = "<group>";
 		};
 		F8CC03802822B1370077AD57 /* Feed */ = {
@@ -395,6 +409,7 @@
 				F8085E9D28B2B707003BF02F /* CarouselSubview.swift in Sources */,
 				F8085E9B28B2B6D1003BF02F /* InterestsSubview.swift in Sources */,
 				F8085E9928B2B699003BF02F /* AboutMeSubview.swift in Sources */,
+				F873964728C5C8AF00AE9455 /* Style+Modifier.swift in Sources */,
 				F8192C8228B1FE1800C51857 /* Font+Extension.swift in Sources */,
 				F8CC039D2823B0BD0077AD57 /* FriendsView.swift in Sources */,
 				F8192C6128AAC5AC00C51857 /* FriendsViewModel.swift in Sources */,
@@ -407,6 +422,7 @@
 				F8776ACC28B49E7600A77371 /* ImageCarouselIndicatorsView.swift in Sources */,
 				F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */,
 				F8085E9628B2B641003BF02F /* SharedStyles.swift in Sources */,
+				F873964928C5C8CD00AE9455 /* Size+Modifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
