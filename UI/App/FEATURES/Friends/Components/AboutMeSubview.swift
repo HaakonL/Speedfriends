@@ -31,6 +31,15 @@ struct AboutMeSubview: View {
 
 struct AboutMeSubview_Previews: PreviewProvider {
     static var previews: some View {
-        AboutMeSubview(UserInfo())
+		VStack(alignment: .leading) {
+			AboutMeSubview(UserInfo(
+				name: "Kåre",
+				age: 20,
+				location: "Hjelmeland",
+				images: [],
+				description: "Jeg liker å sykkkle",
+				interests: []
+			))
+		}
     }
 }

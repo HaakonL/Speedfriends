@@ -77,9 +77,9 @@ struct CarouselSubview: View {
 						}
 					} label: {
 						Image("right")
-							.opacity(currentIndex == friend.images.count-1 ? 0.35 : 1)
+							.opacity(currentIndex >= friend.images.count-1 ? 0.35 : 1)
 					}
-					.disabled(currentIndex == friend.images.count-1)
+					.disabled(currentIndex >= friend.images.count-1)
 				}
 				.padding(.horizontal, 8)
 				
@@ -87,12 +87,12 @@ struct CarouselSubview: View {
 				
 				HStack(alignment: .center) {
 					VStack(alignment: .leading) {
-						Text("Silje Marie, 33")
+						Text("\(friend.name), \(friend.age)")
 							.font(.friendsName)
 							.foregroundColor(.white)
 							.shadow(color: .textDropShadow, radius: 1.5, x: 1.5, y: 1.5)
 						
-						Text("Oslo, Norway")
+						Text(friend.location)
 							.font(.friendsLocation)
 							.foregroundColor(.white)
 							.shadow(color: .textDropShadow, radius: 1.5, x: 1.5, y: 1.5)
@@ -118,6 +118,16 @@ struct CarouselSubview: View {
 
 struct CarouselSubview_Previews: PreviewProvider {
     static var previews: some View {
-		CarouselSubview(UserInfo())
+		VStack {
+			CarouselSubview(UserInfo(
+				name: "Karo Sell",
+				age: 73,
+				location: "Drammen",
+				images: [],
+				description: "Det er bedre med en time i Drammen.",
+				interests: []
+			))
+			Spacer()
+		}
     }
 }

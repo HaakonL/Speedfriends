@@ -19,7 +19,11 @@ import Persistence
 
 extension Resolver {
 	public static func bootstrapDomain() {
-		register { FriendsService() }.implements(FriendsServiceProtocol.self)
-		register { CoreDataManager() }.implements(DataManagerProtocol.self)
+		register { FriendsService() as FriendsServiceProtocol }
+		register { CoreDataManager() as DataManagerProtocol }
+		
+#if DEBUG
+		register { FriendsMockService() as FriendsServiceProtocol }
+#endif
 	}
 }

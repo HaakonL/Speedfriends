@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83FDA1B28C7CACA00369EB0 /* UserInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDA1A28C7CACA00369EB0 /* UserInterest.swift */; };
 		F8596F1728BFD3E30029804E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F64DA428BFC77100CD55FE /* UserInfo.swift */; };
 		F8596F1828BFD3E70029804E /* EntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F64DA528BFC77100CD55FE /* EntityProtocol.swift */; };
 		F8596F1928BFD3EC0029804E /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F64DA128BFC77100CD55FE /* DataManagerProtocol.swift */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F83FDA1A28C7CACA00369EB0 /* UserInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterest.swift; sourceTree = "<group>"; };
 		F8F64D7128BFC73300CD55FE /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F64DA128BFC77100CD55FE /* DataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
 		F8F64DA228BFC77100CD55FE /* FriendsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsServiceProtocol.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				F8F64DA428BFC77100CD55FE /* UserInfo.swift */,
 				F8F64DA528BFC77100CD55FE /* EntityProtocol.swift */,
+				F83FDA1A28C7CACA00369EB0 /* UserInterest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				F8596F1928BFD3EC0029804E /* DataManagerProtocol.swift in Sources */,
 				F8596F1A28BFD3EF0029804E /* FriendsServiceProtocol.swift in Sources */,
+				F83FDA1B28C7CACA00369EB0 /* UserInterest.swift in Sources */,
 				F8596F1828BFD3E70029804E /* EntityProtocol.swift in Sources */,
 				F8596F1728BFD3E30029804E /* UserInfo.swift in Sources */,
 			);

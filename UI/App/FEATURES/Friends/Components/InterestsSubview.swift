@@ -65,6 +65,13 @@ struct InterestItemView: View {
 
 struct InterestsSubview_Previews: PreviewProvider {
     static var previews: some View {
-		InterestsSubview(UserInfo())
+		InterestsSubview(UserInfo(
+			name: "Arnfrid",
+			age: 60,
+			location: "Asker",
+			images: [],
+			description: "Det er ikke gøy!",
+			interests: [UserInterest(name: "Basketball", image: "basketball")]
+		))
     }
 }
