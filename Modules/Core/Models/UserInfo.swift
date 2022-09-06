@@ -19,7 +19,7 @@ public class UserInfo: Entity {
 	public let interests: [UserInterest] = [
 		UserInterest(name: "Swimming", image: "swimming", inCommon: false),
 		UserInterest(name: "Running", image: "running", inCommon: true),
-		UserInterest(name: "Healthy Food", image: "healthy_food", inCommon: false),
+		UserInterest(name: "Healthy Food", image: "healthy-food", inCommon: false),
 		UserInterest(name: "Sailing", image: "sailing", inCommon: true),
 		UserInterest(name: "Astronomy", image: "astronomy", inCommon: false),
 		UserInterest(name: "Travelling", image: "travelling", inCommon: false),

@@ -35,7 +35,8 @@
 		F8F64D6728BFC73300CD55FE = {
 			isa = PBXGroup;
 			children = (
-				F8F64D7328BFC73300CD55FE /* Core */,
+				F8F64DA328BFC77100CD55FE /* Contracts */,
+				F8F64DA628BFC77100CD55FE /* Models */,
 				F8F64D7228BFC73300CD55FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,15 +47,6 @@
 				F8F64D7128BFC73300CD55FE /* Core.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F8F64D7328BFC73300CD55FE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F8F64DA328BFC77100CD55FE /* Contracts */,
-				F8F64DA628BFC77100CD55FE /* Models */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		F8F64DA328BFC77100CD55FE /* Contracts */ = {
