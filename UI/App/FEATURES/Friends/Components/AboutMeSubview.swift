@@ -16,14 +16,19 @@ struct AboutMeSubview: View {
 	}
 	
 	var body: some View {
-		VStack(alignment: .leading, spacing: 10) {
-			Text("About me")
-				.font(.subTitle)
-				.foregroundStyle(SharedStyles.titleStyle())
-			
-			Text(friend.description)
-				.fontWithLineHeight(font: .aboutMeText, lineHeight: 24)
-				.foregroundColor(.aboutMeText)
+		HStack {
+			VStack(alignment: .leading, spacing: 10) {
+				Text("About me")
+					.font(.subTitle)
+					.foregroundStyle(SharedStyles.titleStyle())
+				
+				Text(friend.description)
+					.fontWithLineHeight(font: .aboutMeText, lineHeight: 24)
+					.foregroundColor(.aboutMeText)
+				
+				Spacer()
+			}
+			Spacer()
 		}
 		.padding()
 	}
