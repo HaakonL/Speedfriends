@@ -12,6 +12,7 @@
 		F8596F1128BFD36A0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0E28BFD36A0029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8596F1228BFD36A0029804E /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0F28BFD36A0029804E /* Persistence.framework */; };
 		F8596F1328BFD36A0029804E /* Persistence.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0F28BFD36A0029804E /* Persistence.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872B94028C8B33700FB6B04 /* FriendsMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F872B93F28C8B33700FB6B04 /* FriendsMockService.swift */; };
 		F8F64D5828BFC71500CD55FE /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F64D4F28BFC71500CD55FE /* Services.framework */; };
 		F8F64D5D28BFC71500CD55FE /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F64D5C28BFC71500CD55FE /* ServicesTests.swift */; };
 		F8F64DAA28BFC82300CD55FE /* FriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F64DA928BFC82300CD55FE /* FriendsService.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		F8596F0E28BFD36A0029804E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8596F0F28BFD36A0029804E /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F872B93F28C8B33700FB6B04 /* FriendsMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsMockService.swift; sourceTree = "<group>"; };
 		F8F64D4F28BFC71500CD55FE /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F64D5728BFC71500CD55FE /* ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F64D5C28BFC71500CD55FE /* ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F872B93E28C8B32000FB6B04 /* Test Services */ = {
+			isa = PBXGroup;
+			children = (
+				F872B93F28C8B33700FB6B04 /* FriendsMockService.swift */,
+			);
+			path = "Test Services";
+			sourceTree = "<group>";
+		};
 		F8F64D4528BFC71500CD55FE = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		F8F64D5B28BFC71500CD55FE /* ServicesTests */ = {
 			isa = PBXGroup;
 			children = (
+				F872B93E28C8B32000FB6B04 /* Test Services */,
 				F8F64D5C28BFC71500CD55FE /* ServicesTests.swift */,
 			);
 			path = ServicesTests;
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F64DAA28BFC82300CD55FE /* FriendsService.swift in Sources */,
+				F872B94028C8B33700FB6B04 /* FriendsMockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

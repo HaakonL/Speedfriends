@@ -71,7 +71,7 @@ struct InterestsSubview_Previews: PreviewProvider {
 			location: "Asker",
 			images: [],
 			description: "Det er ikke gøy!",
-			interests: [UserInterest(name: "Basketball", image: "basketball")]
+			interests: [UserInterest(name: "Basketball", image: "basketball", inCommon: true)]
 		))
     }
 }

@@ -37,12 +37,13 @@
 		F844A82128BFD61E00FDEFC7 /* SwiftUIFlow in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82028BFD61E00FDEFC7 /* SwiftUIFlow */; };
 		F844A82428BFD62D00FDEFC7 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82328BFD62D00FDEFC7 /* Resolver */; };
 		F844A84C28C0AD8F00FDEFC7 /* Bootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; };
-		F844A84D28C0AD8F00FDEFC7 /* Bootstrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F844A84D28C0AD8F00FDEFC7 /* Bootstrap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F84DC7BF28C5E61400CAE517 /* FriendsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DC7BE28C5E61400CAE517 /* FriendsViewModelTests.swift */; };
 		F84DC7CD28C5E8C200CAE517 /* App_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DC7CC28C5E8C200CAE517 /* App_UITests.swift */; };
 		F84DC7CF28C5E8C200CAE517 /* App_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84DC7CE28C5E8C200CAE517 /* App_UITestsLaunchTests.swift */; };
 		F8596F0C28BFD35D0029804E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; };
-		F8596F0D28BFD35D0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8596F0D28BFD35D0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0B28BFD35D0029804E /* Core.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F872B93D28C8B25300FB6B04 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F872B93C28C8B25300FB6B04 /* Resolver */; };
 		F873964728C5C8AF00AE9455 /* Style+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873964628C5C8AF00AE9455 /* Style+Modifier.swift */; };
 		F873964928C5C8CD00AE9455 /* Size+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873964828C5C8CD00AE9455 /* Size+Modifier.swift */; };
 		F8776ACA28B49D2700A77371 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8776AC928B49D2700A77371 /* ImageCarouselView.swift */; };
@@ -147,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F872B93D28C8B25300FB6B04 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +405,9 @@
 				F84DC7C128C5E61400CAE517 /* PBXTargetDependency */,
 			);
 			name = App.UnitTests;
+			packageProductDependencies = (
+				F872B93C28C8B25300FB6B04 /* Resolver */,
+			);
 			productName = App.UnitTests;
 			productReference = F84DC7BC28C5E61400CAE517 /* App.UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -615,7 +620,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Debug;
 		};
@@ -635,7 +640,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;
 		};
@@ -928,6 +933,11 @@
 			productName = SwiftUIFlow;
 		};
 		F844A82328BFD62D00FDEFC7 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F844A82228BFD62D00FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		F872B93C28C8B25300FB6B04 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F844A82228BFD62D00FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
