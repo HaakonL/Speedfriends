@@ -18,6 +18,7 @@ public class UserInfo: Entity {
 		self.interests = interests
 	}
 
+	public let id = UUID()
 	public let name: String
 	public let age: Int
 	public let location: String

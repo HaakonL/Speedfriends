@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83FDA1D28C86D5300369EB0 /* InMemoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDA1C28C86D5300369EB0 /* InMemoryDataManager.swift */; };
 		F8596F1528BFD3710029804E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F1428BFD3710029804E /* Core.framework */; };
 		F8596F1628BFD3710029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F1428BFD3710029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8F64D8E28BFC74B00CD55FE /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F64D8528BFC74B00CD55FE /* Persistence.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F83FDA1C28C86D5300369EB0 /* InMemoryDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryDataManager.swift; sourceTree = "<group>"; };
 		F8596F1428BFD3710029804E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F64D8528BFC74B00CD55FE /* Persistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Persistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F64D8D28BFC74B00CD55FE /* PersistenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F64D9D28BFC75B00CD55FE /* CoreDataManager.swift */,
+				F83FDA1C28C86D5300369EB0 /* InMemoryDataManager.swift */,
 				F8F64D9F28BFC75B00CD55FE /* DataStore.xcdatamodeld */,
 			);
 			path = Persistence;
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8F64DA028BFC75B00CD55FE /* CoreDataManager.swift in Sources */,
+				F83FDA1D28C86D5300369EB0 /* InMemoryDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

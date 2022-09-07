@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol Entity {
-	
+	var id: UUID { get }
 }

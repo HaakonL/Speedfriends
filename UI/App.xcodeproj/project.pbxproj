@@ -33,6 +33,7 @@
 		F8192CA828B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */; };
 		F8192CA928B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */; };
 		F8192CAA28B22D2F00C51857 /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */; };
+		F83FDA3A28C8768500369EB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83FDA3928C8768500369EB0 /* Preview Assets.xcassets */; };
 		F844A82128BFD61E00FDEFC7 /* SwiftUIFlow in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82028BFD61E00FDEFC7 /* SwiftUIFlow */; };
 		F844A82428BFD62D00FDEFC7 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82328BFD62D00FDEFC7 /* Resolver */; };
 		F844A84C28C0AD8F00FDEFC7 /* Bootstrap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */; };
@@ -117,6 +118,7 @@
 		F8192C9628B22D2F00C51857 /* Inter-ExtraLight-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9728B22D2F00C51857 /* Inter-ExtraLightItalic-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic-BETA.ttf"; sourceTree = "<group>"; };
 		F8192C9828B22D2F00C51857 /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F83FDA3928C8768500369EB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F844A84B28C0AD8F00FDEFC7 /* Bootstrap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bootstrap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84DC7BC28C5E61400CAE517 /* App.UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App.UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84DC7BE28C5E61400CAE517 /* FriendsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModelTests.swift; sourceTree = "<group>"; };
@@ -223,6 +225,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F83FDA3828C8766900369EB0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F83FDA3928C8768500369EB0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		F84DC7BD28C5E61400CAE517 /* App.UnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,10 +312,10 @@
 				F873964528C5C82D00AE9455 /* Modifiers */,
 				F8085E9428B2B62E003BF02F /* Common */,
 				F8192C6228AAC8E600C51857 /* Extensions */,
+				F8CC03782822B00C0077AD57 /* Assets */,
 				F8CC034B2822AF6A0077AD57 /* Main.swift */,
 				F8CC034D2822AF6A0077AD57 /* MainView.swift */,
 				F8CC03762822B0000077AD57 /* Bootstrap.swift */,
-				F8CC03782822B00C0077AD57 /* Assets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -313,9 +323,10 @@
 		F8CC03782822B00C0077AD57 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F8192C8628B1FF7000C51857 /* Info.plist */,
 				F8CC034F2822AF6B0077AD57 /* Assets.xcassets */,
+				F8192C8628B1FF7000C51857 /* Info.plist */,
 				F8192C8328B1FEBA00C51857 /* Fonts */,
+				F83FDA3828C8766900369EB0 /* Preview Content */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -514,6 +525,7 @@
 				F8192CA428B22D2F00C51857 /* Inter-ExtraBoldItalic.ttf in Resources */,
 				F8192C9928B22D2F00C51857 /* Inter-UI-BlackItalic.ttf in Resources */,
 				F8192C9F28B22D2F00C51857 /* Inter-ExtraBold.ttf in Resources */,
+				F83FDA3A28C8768500369EB0 /* Preview Assets.xcassets in Resources */,
 				F8192C9B28B22D2F00C51857 /* Inter-BoldItalic.ttf in Resources */,
 				F8192CA628B22D2F00C51857 /* Inter-LightItalic-BETA.ttf in Resources */,
 				F8192CAA28B22D2F00C51857 /* Inter-SemiBoldItalic.ttf in Resources */,
@@ -788,18 +800,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = "App/Assets/Preview\\ Content";
 				DEVELOPMENT_TEAM = AZG82D2WT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Assets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Speedfriends;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to measure the size of the fish";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -821,18 +834,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = "App/Assets/Preview\\ Content";
 				DEVELOPMENT_TEAM = AZG82D2WT4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Assets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Speedfriends;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to measure the size of the fish";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -22,8 +22,9 @@ extension Resolver {
 		register { FriendsService() as FriendsServiceProtocol }
 		register { CoreDataManager() as DataManagerProtocol }
 		
-#if DEBUG
+#if DEBUG || TEST
 		register { FriendsMockService() as FriendsServiceProtocol }
+		register { InMemoryDataManager() as DataManagerProtocol }
 #endif
 	}
 }

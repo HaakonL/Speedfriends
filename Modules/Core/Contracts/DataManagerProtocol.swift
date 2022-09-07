@@ -8,6 +8,6 @@
 import Foundation
 
 public protocol DataManagerProtocol {
-	func upsert(entity:Entity) -> Bool
-	//func getById(id:UUID) -> Entity
+	func upsert(_ entity: Entity) -> Bool
+	func getById(_ id: UUID) -> Entity?
 }
