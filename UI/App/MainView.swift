@@ -98,12 +98,7 @@ struct MainView: View {
 }
 
 struct TabViewItem<Content:View>: View {
-	//@State public private(set) var defaultImage: String
-	//@State public private(set) var activeImage: String
 	@State public private(set) var tabItem: TabItem
-	
-	//@Binding public private(set) var selectedTab: TabItem
-	
 	public private(set) var content: () -> Content
 	
 	var body: some View {
@@ -114,9 +109,6 @@ struct TabViewItem<Content:View>: View {
 				self.content()
 			}
 		}
-		/*.tabItem {
-			Image("\(image)_\(selectedTab == tabItem ? "active" : "default")")
-		}*/
 		.tag(tabItem)
 	}
 }
@@ -148,12 +140,6 @@ struct Header: View {
 
 struct MainPreview: PreviewProvider {
     static var previews: some View {
-		Group {
-			MainView(selectedTab: TabItem.friends)
-				.preferredColorScheme(.light)
-			
-			MainView(selectedTab: TabItem.friends)
-				.preferredColorScheme(.dark)
-		}
+		MainView(selectedTab: TabItem.friends)
     }
 }

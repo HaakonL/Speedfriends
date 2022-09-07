@@ -10,9 +10,11 @@ import SwiftUI
 struct FeedView : View {
 	
 	var body: some View {
-		VStack {
-			Text("Feed")
-			Spacer()
+		ScrollView {
+			VStack(alignment: .leading) {
+				Image("feed")
+				Spacer()
+			}
 		}
 	}
 }

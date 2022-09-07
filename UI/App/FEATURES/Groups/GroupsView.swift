@@ -9,9 +9,25 @@ import SwiftUI
 
 struct GroupsView: View {
     var body: some View {
-		VStack {
-			Text("Groups")
-			Spacer()
+		ScrollView {
+			VStack(alignment: .leading) {
+				
+				Text("Dine grupper")
+					.font(.subTitle)
+					.foregroundStyle(SharedStyles.titleStyle())
+				
+				Image("groups")
+				
+				Spacer().frame(height: 30)
+				
+				Text("Andre offentlige grupper")
+					.font(.subTitle)
+					.foregroundStyle(SharedStyles.titleStyle())
+				
+				Image("groups")
+
+				Spacer()
+			}
 		}
     }
 }

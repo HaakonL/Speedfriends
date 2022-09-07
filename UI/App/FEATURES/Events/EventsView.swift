@@ -10,9 +10,14 @@ import SwiftUI
 struct EventsView: View {
 	
     var body: some View {
-		VStack {
-			Text("Events")
-			Spacer()
+		ScrollView {
+			VStack(alignment: .leading) {
+				Image("event-1")
+				Image("event-2")
+				Image("event-3")
+				Image("event-4")
+				Spacer()
+			}
 		}
     }
 }

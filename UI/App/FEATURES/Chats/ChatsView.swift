@@ -9,9 +9,15 @@ import SwiftUI
 
 struct ChatsView: View {
     var body: some View {
-		VStack {
-			Text("Chats")
-			Spacer()
+		ScrollView {
+			VStack(alignment: .leading) {
+				Text("Chatter")
+					.font(.subTitle)
+					.foregroundStyle(SharedStyles.titleStyle())
+				
+				Image("chats")
+				Spacer()
+			}
 		}
     }
 }
