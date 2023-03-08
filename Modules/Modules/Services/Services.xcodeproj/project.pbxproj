@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F844A82728BFD6F600FDEFC7 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F844A82628BFD6F600FDEFC7 /* Resolver */; };
+		B7CE37402936357800FEA52F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B7CE373F2936357800FEA52F /* Factory */; };
 		F8596F1028BFD36A0029804E /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0E28BFD36A0029804E /* Core.framework */; };
 		F8596F1128BFD36A0029804E /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0E28BFD36A0029804E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8596F1228BFD36A0029804E /* Persistence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8596F0F28BFD36A0029804E /* Persistence.framework */; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F844A82728BFD6F600FDEFC7 /* Resolver in Frameworks */,
+				B7CE37402936357800FEA52F /* Factory in Frameworks */,
 				F8596F1228BFD36A0029804E /* Persistence.framework in Frameworks */,
 				F8596F1028BFD36A0029804E /* Core.framework in Frameworks */,
 			);
@@ -165,7 +165,7 @@
 			);
 			name = Services;
 			packageProductDependencies = (
-				F844A82628BFD6F600FDEFC7 /* Resolver */,
+				B7CE373F2936357800FEA52F /* Factory */,
 			);
 			productName = Services;
 			productReference = F8F64D4F28BFC71500CD55FE /* Services.framework */;
@@ -218,7 +218,7 @@
 			);
 			mainGroup = F8F64D4528BFC71500CD55FE;
 			packageReferences = (
-				F844A82528BFD6F600FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */,
+				B7CE373E2936357800FEA52F /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = F8F64D5028BFC71500CD55FE /* Products */;
 			projectDirPath = "";
@@ -522,21 +522,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F844A82528BFD6F600FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		B7CE373E2936357800FEA52F /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Resolver";
+			repositoryURL = "https://github.com/hmlongco/Factory";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F844A82628BFD6F600FDEFC7 /* Resolver */ = {
+		B7CE373F2936357800FEA52F /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F844A82528BFD6F600FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = Resolver;
+			package = B7CE373E2936357800FEA52F /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

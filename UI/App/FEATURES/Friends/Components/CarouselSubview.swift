@@ -20,15 +20,15 @@ struct CarouselSubview: View {
 	var body: some View {
 		ZStack(alignment: .top) {
 			GeometryReader { geometry in
-				ImageCarouselView(currentIndex: $currentIndex, numberOfImages: friend.images.count) {
-					ForEach(friend.images, id: \.self) { img in
-						Image(img)
-							.resizable()
-							.scaledToFill()
-							.frame(width: geometry.size.width, height: geometry.size.height)
-					}
-				}
-				.cornerRadius(16)
+                ImageCarouselView(currentIndex: $currentIndex, numberOfImages: friend.images.count) {
+                    ForEach(friend.images, id: \.self) { img in
+                        Image(img)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: geometry.size.width, height: geometry.size.height)
+                    }
+                }
+                .cornerRadius(16)
 			}
 			.frame(height: UIScreen.main.bounds.height * 0.5, alignment: .center)
 			
@@ -70,16 +70,16 @@ struct CarouselSubview: View {
 					.disabled(currentIndex == 0)
 					
 					Spacer()
-					
-					Button {
-						if currentIndex < friend.images.count-1 {
-							currentIndex += 1
-						}
-					} label: {
-						Image("right")
-							.opacity(currentIndex >= friend.images.count-1 ? 0.35 : 1)
-					}
-					.disabled(currentIndex >= friend.images.count-1)
+                    
+                    Button {
+                        if currentIndex < friend.images.count-1 {
+                            currentIndex += 1
+                        }
+                    } label: {
+                        Image("right")
+                            .opacity(currentIndex >= friend.images.count-1 ? 0.35 : 1)
+                    }
+                    .disabled(currentIndex >= friend.images.count-1)
 				}
 				.padding(.horizontal, 8)
 				

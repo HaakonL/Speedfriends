@@ -6,21 +6,18 @@
 //
 
 import SwiftUI
-import Resolver
 
 struct FriendsView: View {
-	
-	//@StateObject private var viewModel: FriendsViewModel = FriendsViewModel()
-	@InjectedObject var viewModel: FriendsViewModel
+    @StateObject private var viewModel = FriendsViewModel()
 	
     var body: some View {
 		ScrollView{
 			VStack {
-				if let friend = viewModel.currentFriendShowing {
-					CarouselSubview(friend)
-					InterestsSubview(friend)
-					AboutMeSubview(friend)
-				}
+                if let friend = viewModel.currentFriendShowing {
+                    CarouselSubview(friend)
+                    InterestsSubview(friend)
+                    AboutMeSubview(friend)
+                }
 				Spacer()
 			}
 		}

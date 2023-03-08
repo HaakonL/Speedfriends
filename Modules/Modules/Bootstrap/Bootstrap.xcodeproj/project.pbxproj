@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7DB0AE429B88235001D59EA /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B7DB0AE329B88235001D59EA /* Factory */; };
 		F844A83F28BFD96900FDEFC7 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844A83E28BFD96900FDEFC7 /* Bootstrap.swift */; };
-		F844A84228BFDDC300FDEFC7 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F844A84128BFDDC300FDEFC7 /* Resolver */; };
 		F844A84628BFDE1F00FDEFC7 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84428BFDE1F00FDEFC7 /* Core.framework */; };
 		F844A84728BFDE1F00FDEFC7 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84428BFDE1F00FDEFC7 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F844A84828BFDE1F00FDEFC7 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F844A84528BFDE1F00FDEFC7 /* Services.framework */; };
@@ -46,10 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F844A84228BFDDC300FDEFC7 /* Resolver in Frameworks */,
 				F844A84828BFDE1F00FDEFC7 /* Services.framework in Frameworks */,
 				F844A84F28C0C24200FDEFC7 /* Persistence.framework in Frameworks */,
 				F844A84628BFDE1F00FDEFC7 /* Core.framework in Frameworks */,
+				B7DB0AE429B88235001D59EA /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			);
 			name = Bootstrap;
 			packageProductDependencies = (
-				F844A84128BFDDC300FDEFC7 /* Resolver */,
+				B7DB0AE329B88235001D59EA /* Factory */,
 			);
 			productName = Bootstrap;
 			productReference = F844A83428BFD95000FDEFC7 /* Bootstrap.framework */;
@@ -151,7 +151,7 @@
 			);
 			mainGroup = F844A82A28BFD95000FDEFC7;
 			packageReferences = (
-				F844A84028BFDDC300FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */,
+				B7DB0AE229B88235001D59EA /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = F844A83528BFD95000FDEFC7 /* Products */;
 			projectDirPath = "";
@@ -387,21 +387,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F844A84028BFDDC300FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		B7DB0AE229B88235001D59EA /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Resolver";
+			repositoryURL = "https://github.com/hmlongco/Factory";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F844A84128BFDDC300FDEFC7 /* Resolver */ = {
+		B7DB0AE329B88235001D59EA /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F844A84028BFDDC300FDEFC7 /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = Resolver;
+			package = B7DB0AE229B88235001D59EA /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

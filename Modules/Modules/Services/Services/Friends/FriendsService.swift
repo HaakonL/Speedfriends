@@ -7,10 +7,13 @@
 
 import Foundation
 import Core
+import Factory
 
 public class FriendsService: FriendsServiceProtocol {
 	
-	public init() {}
+    private var dataManager = Container.shared.dataManager()
+
+    public init() {}
 	
 	public func getFriends() -> [UserInfo] {
 		return self.getFriendsFromBackend()

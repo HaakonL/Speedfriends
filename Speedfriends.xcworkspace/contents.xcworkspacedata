@@ -5,15 +5,15 @@
       location = "container:UI/App.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Modules/Core/Core.xcodeproj">
+      location = "group:Modules/Modules/Core/Core.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Modules/Services/Services.xcodeproj">
+      location = "group:Modules/Modules/Services/Services.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Modules/Persistence/Persistence.xcodeproj">
+      location = "group:Modules/Modules/Persistence/Persistence.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Modules/Bootstrap/Bootstrap.xcodeproj">
+      location = "group:Modules/Modules/Bootstrap/Bootstrap.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,7 +14,7 @@ struct InterestsSubview: View {
 	private let friend: UserInfo
 	
 	init(_ friend: UserInfo) {
-		self.friend = friend 
+		self.friend = friend
 	}
 	
 	var body: some View {
@@ -24,9 +24,9 @@ struct InterestsSubview: View {
 				.foregroundStyle(SharedStyles.titleStyle())
 			
 			Flow(.vertical, alignment: .topLeading) {
-				ForEach(friend.interests) {interest in
-					InterestItemView(title: interest.name, icon: interest.image, sharedInterest: interest.inCommon)
-				}
+                ForEach(friend.interests) { interest in
+                    InterestItemView(title: interest.name, icon: interest.image, sharedInterest: interest.inCommon)
+                }
 			}
 		}
 		.padding()

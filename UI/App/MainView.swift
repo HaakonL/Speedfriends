@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Resolver
 
 enum TabItem: Int {
 	case events, feed, friends, groups, chats

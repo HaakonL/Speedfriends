@@ -6,17 +6,19 @@
 //
 
 import Foundation
-import Resolver
 import Core
+import Factory
 
 class FriendsViewModel: ObservableObject {
-	
 	private var possibleFriends: [UserInfo] = []
-	@Published public private(set) var currentFriendShowing: UserInfo?	
-	@Injected var friendsService: FriendsServiceProtocol
+    private var friendsService = Container.shared.friendsService()
+    
+    @Published public private(set) var currentFriendShowing: UserInfo?
 	
 	public func loadFriends() -> Void {
-		let friends = self.friendsService.getFriends()
+        //guard let friendsService else { return }
+        
+		let friends = friendsService.getFriends()
 		possibleFriends.append(contentsOf: friends)
 		currentFriendShowing = friends.first
 	}
